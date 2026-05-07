@@ -31,3 +31,15 @@ function validarCorreo() {
         document.getElementById("mensajeCorreo").innerText = "Correo registrado correctamente.";
     }
 }
+
+function limpiarFormulario() {
+  document.getElementById("nombre").value = "";
+  document.getElementById("correo").value = "";
+  document.getElementById("resultado").innerText = "";
+  document.getElementById("resultado").className = "mensaje-exito";
+  document.getElementById("mensajeCorreo").innerText = "";
+  document.getElementById("mensajeCorreo").className = "mensaje-exito";
+  intentos = 0;
+  document.getElementById("contadorIntentos").innerText =
+    "Intentos de validación: 0";
+}
