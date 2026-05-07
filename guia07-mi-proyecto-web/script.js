@@ -1,6 +1,6 @@
 function saludar() {
     // Obtener el valor del input
-    let nombre = document.getElementById("nombre").value;
+    let nombre = document.getElementById("nombre").value.trim();
     // Validar si el usuario escribió algo
     if (nombre === "") {
         document.getElementById("resultado").innerText =
